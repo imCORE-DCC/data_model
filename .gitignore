@@ -1,0 +1,5 @@
+.venv/
+.vscode/settings.json
+token.pickle
+schematic_service_account_creds.json
+credentials.json
