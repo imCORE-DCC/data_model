@@ -1,8 +1,8 @@
 definitions:
-  synapse_config: "/home/bgrande/repos/imcore_data_model/.synapseConfig"
-  creds_path: "/home/bgrande/repos/imcore_data_model/credentials.json"
-  token_pickle: "/home/bgrande/repos/imcore_data_model/token.pickle"
-  service_acct_creds: "/home/bgrande/repos/imcore_data_model/schematic_service_account_creds.json"
+  synapse_config: "./.synapseConfig"
+  creds_path: "./credentials.json"
+  token_pickle: "./token.pickle"
+  service_acct_creds: "./schematic_service_account_creds.json"
 
 synapse:
   master_fileview: "syn23512327"
@@ -17,7 +17,7 @@ manifest:
 
 model:
   input:
-    location: "/home/bgrande/repos/imcore_data_model/imcore.model.jsonld"
+    location: "./imcore.model.jsonld"
     file_type: "local"
 
 style:
