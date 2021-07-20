@@ -20,7 +20,7 @@ Age at Sequencing,"Age of the subject the sample was taken from, in days, at the
 Sequencing Platform GEO Accession Number,The GEO accession number of the sequencing platform used. See GEO Platforms Browser,,,,FALSE,Sequencing,,ImCORE,
 Adapter Name,Name of the sequencing adapter,,,,FALSE,Sequencing,,https://docs.gdc.cancer.gov/Data_Dictionary/viewer/#?view=table-definition-view&id=read_group,
 Adapter Sequence,Base sequence of the sequencing adapter,,,,FALSE,Sequencing,,https://docs.gdc.cancer.gov/Data_Dictionary/viewer/#?view=table-definition-view&id=read_group,
-Base Caller Name,Name of the base caller,,,,FALSE ,Sequencing,,https://docs.gdc.cancer.gov/Data_Dictionary/viewer/#?view=table-definition-view&id=read_group,
+Base Caller Name,Name of the base caller,,,,FALSE,Sequencing,,https://docs.gdc.cancer.gov/Data_Dictionary/viewer/#?view=table-definition-view&id=read_group,
 Base Caller Version,Version of the base caller,,,,FALSE,Sequencing,,https://docs.gdc.cancer.gov/Data_Dictionary/viewer/#?view=table-definition-view&id=read_group,
 Flow Cell Barcode,Flow cell barcode. Wrong or missing information may affect analysis results.,,,,FALSE,Sequencing,,https://docs.gdc.cancer.gov/Data_Dictionary/viewer/#?view=table-definition-view&id=read_group,
 Fragment Maximum Length,Maximum length of the sequenced fragments (e.g. as predicted by Agilent Bioanalyzer) (integer).,,,,FALSE,Sequencing,,https://docs.gdc.cancer.gov/Data_Dictionary/viewer/#?view=table-definition-view&id=read_group,

@@ -2003,7 +2003,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Assay",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -2020,7 +2020,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Sequencing",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -2715,7 +2715,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Sequencing Platform GEO Accession Number",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -2732,7 +2732,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Adapter Name",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -2749,7 +2749,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Adapter Sequence",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -2766,7 +2766,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Base Caller Name",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -2783,7 +2783,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Base Caller Version",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -2800,7 +2800,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Flow Cell Barcode",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -2817,7 +2817,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Fragment Maximum Length",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -2834,7 +2834,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Fragment Mean Length",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -2851,7 +2851,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Fragment Minimum Length",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -2868,7 +2868,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Fragment Standard Deviation Length",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -2885,7 +2885,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Lane Number",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -2933,7 +2933,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Multiplex Barcode",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -2950,7 +2950,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Days to Library Preparation",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -2967,7 +2967,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Size Selection Range",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -2998,7 +2998,7 @@
                 }
             ],
             "sms:displayName": "Spike In",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3026,7 +3026,7 @@
                 }
             ],
             "sms:displayName": "ERCC",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3043,7 +3043,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Spike In Concentration",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3068,7 +3068,7 @@
                 }
             ],
             "sms:displayName": "To Trim Adapter Sequence",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3085,7 +3085,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Adapter Trimmer Name",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3102,7 +3102,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "RIN",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3119,7 +3119,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "DV200",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3170,7 +3170,7 @@
                 }
             ],
             "sms:displayName": "Adapter Content",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3204,7 +3204,7 @@
                 }
             ],
             "sms:displayName": "Basic Statistics",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3221,7 +3221,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Encoding",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3255,7 +3255,7 @@
                 }
             ],
             "sms:displayName": "Kmer Content",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3289,7 +3289,7 @@
                 }
             ],
             "sms:displayName": "Overrepresented Sequences",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3323,7 +3323,7 @@
                 }
             ],
             "sms:displayName": "Per Base N Content",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3357,7 +3357,7 @@
                 }
             ],
             "sms:displayName": "Per Base Sequence Content",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3391,7 +3391,7 @@
                 }
             ],
             "sms:displayName": "Per Base Sequence Quality",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3425,7 +3425,7 @@
                 }
             ],
             "sms:displayName": "Per Sequence GC Content",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3459,7 +3459,7 @@
                 }
             ],
             "sms:displayName": "Per Sequence Quality Score",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3493,7 +3493,7 @@
                 }
             ],
             "sms:displayName": "Per Tile Sequence Quality",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3510,7 +3510,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Percent GC Content",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3544,7 +3544,7 @@
                 }
             ],
             "sms:displayName": "Sequence Duplication Levels",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3578,7 +3578,7 @@
                 }
             ],
             "sms:displayName": "Sequence Length Distribution",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3595,7 +3595,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Total Reads",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3612,7 +3612,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "QC Workflow Type",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3629,7 +3629,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "QC Workflow Version",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3646,7 +3646,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "QC Workflow Link",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
