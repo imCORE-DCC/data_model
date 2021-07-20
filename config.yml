@@ -11,10 +11,6 @@ synapse:
   token_creds: "syn23643259"
   service_acct_creds: "syn25171627"
 
-manifest:
-  title: "Patient Manifest"
-  data_type: "Patient"
-
 model:
   input:
     location: "./imcore.model.jsonld"
