@@ -5,3 +5,4 @@ schematic_service_account_creds.json
 credentials.json
 *.schema.json
 .synapseConfig
+convert.sh
