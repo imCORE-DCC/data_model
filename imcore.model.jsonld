@@ -1841,7 +1841,7 @@
         {
             "@id": "bts:QCWorkflowVersion",
             "@type": "rdfs:Class",
-            "rdfs:comment": "Major version for a GDC workflow.",
+            "rdfs:comment": "Major version for a workflow",
             "rdfs:label": "QCWorkflowVersion",
             "rdfs:subClassOf": [
                 {
