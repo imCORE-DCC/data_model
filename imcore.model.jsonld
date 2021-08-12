@@ -455,6 +455,9 @@
                     "@id": "bts:NucleicAcidSource"
                 },
                 {
+                    "@id": "bts:gDNAconcentration"
+                },
+                {
                     "@id": "bts:LibrarySelectionMethod"
                 },
                 {
@@ -522,9 +525,6 @@
                 },
                 {
                     "@id": "bts:BaseCallerVersion"
-                },
-                {
-                    "@id": "bts:gDNAconcentration"
                 },
                 {
                     "@id": "bts:QCWorkflowVersion"
