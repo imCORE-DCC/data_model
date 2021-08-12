@@ -335,7 +335,10 @@
                     "@id": "bts:FragmentMinimumLength"
                 },
                 {
-                    "@id": "bts:FragmentStandardLength"
+                    "@id": "bts:FragmentMaximumLength"
+                },
+                {
+                    "@id": "bts:FragmentStandardDeviationLength"
                 },
                 {
                     "@id": "bts:FlowCellBarcode"
@@ -353,9 +356,6 @@
                     "@id": "bts:AdapterSequence"
                 },
                 {
-                    "@id": "bts:ToTrimAdapterSequence"
-                },
-                {
                     "@id": "bts:LaneNumber"
                 },
                 {
@@ -371,9 +371,6 @@
                     "@id": "bts:DV200"
                 },
                 {
-                    "@id": "bts:QCWorkflowType"
-                },
-                {
                     "@id": "bts:QCWorkflowVersion"
                 },
                 {
@@ -384,9 +381,6 @@
                 },
                 {
                     "@id": "bts:FastQCAdapterContent"
-                },
-                {
-                    "@id": "bts:FastQCBasicStatistics"
                 },
                 {
                     "@id": "bts:FastQCKmerContent"
@@ -455,64 +449,43 @@
                     "@id": "bts:imCOREBiospecimenID"
                 },
                 {
-                    "@id": "bts:SequencingBatchID"
-                },
-                {
-                    "@id": "bts:PairedEndLibraryLayout"
+                    "@id": "bts:AgeatSequencing"
                 },
                 {
                     "@id": "bts:NucleicAcidSource"
                 },
                 {
+                    "@id": "bts:gDNAconcentration"
+                },
+                {
                     "@id": "bts:LibrarySelectionMethod"
                 },
                 {
-                    "@id": "bts:ReadLength"
+                    "@id": "bts:PairedEndLibraryLayout"
                 },
                 {
-                    "@id": "bts:AssayKit"
+                    "@id": "bts:SequencingBatchID"
                 },
                 {
                     "@id": "bts:SequencingPlatform"
                 },
                 {
-                    "@id": "bts:AgeatSequencing"
+                    "@id": "bts:NumberofCycles"
+                },
+                {
+                    "@id": "bts:AssayKit"
+                },
+                {
+                    "@id": "bts:TargetNumberofReads"
+                },
+                {
+                    "@id": "bts:TotalNumberofReads"
                 },
                 {
                     "@id": "bts:TargetFoldCoverage"
                 },
                 {
-                    "@id": "bts:AdapterName"
-                },
-                {
-                    "@id": "bts:AdapterSequence"
-                },
-                {
-                    "@id": "bts:BaseCallerName"
-                },
-                {
-                    "@id": "bts:BaseCallerVersion"
-                },
-                {
-                    "@id": "bts:FlowCellBarcode"
-                },
-                {
-                    "@id": "bts:FragmentMaximumLength"
-                },
-                {
-                    "@id": "bts:FragmentMeanLength"
-                },
-                {
-                    "@id": "bts:FragmentMinimumLength"
-                },
-                {
-                    "@id": "bts:FragmentStandardDeviationLength"
-                },
-                {
-                    "@id": "bts:LaneNumber"
-                },
-                {
-                    "@id": "bts:MultiplexBarcode"
+                    "@id": "bts:QualityScoreEncoding"
                 },
                 {
                     "@id": "bts:DaystoLibraryPreparation"
@@ -521,19 +494,49 @@
                     "@id": "bts:SizeSelectionRange"
                 },
                 {
-                    "@id": "bts:AdapterTrimmerName"
+                    "@id": "bts:FragmentMeanLength"
                 },
                 {
-                    "@id": "bts:gDNAconcentration"
+                    "@id": "bts:FragmentMinimumLength"
+                },
+                {
+                    "@id": "bts:FragmentMaximumLength"
+                },
+                {
+                    "@id": "bts:FragmentStandardDeviationLength"
+                },
+                {
+                    "@id": "bts:FlowCellBarcode"
+                },
+                {
+                    "@id": "bts:MultiplexBarcode"
+                },
+                {
+                    "@id": "bts:AdapterName"
+                },
+                {
+                    "@id": "bts:AdapterSequence"
+                },
+                {
+                    "@id": "bts:LaneNumber"
+                },
+                {
+                    "@id": "bts:BaseCallerName"
+                },
+                {
+                    "@id": "bts:BaseCallerVersion"
+                },
+                {
+                    "@id": "bts:QCWorkflowVersion"
+                },
+                {
+                    "@id": "bts:QCWorkflowLink"
+                },
+                {
+                    "@id": "bts:PercentGCContent"
                 },
                 {
                     "@id": "bts:FastQCAdapterContent"
-                },
-                {
-                    "@id": "bts:FastQCBasicStatistics"
-                },
-                {
-                    "@id": "bts:QualityScoreEncoding"
                 },
                 {
                     "@id": "bts:FastQCKmerContent"
@@ -560,28 +563,10 @@
                     "@id": "bts:FastQCPerTileSequenceQuality"
                 },
                 {
-                    "@id": "bts:PercentGCContent"
-                },
-                {
                     "@id": "bts:FastQCSequenceDuplicationLevels"
                 },
                 {
                     "@id": "bts:FastQCSequenceLengthDistribution"
-                },
-                {
-                    "@id": "bts:TotalNumberofReads"
-                },
-                {
-                    "@id": "bts:QCWorkflowType"
-                },
-                {
-                    "@id": "bts:QCWorkflowVersion"
-                },
-                {
-                    "@id": "bts:QCWorkflowLink"
-                },
-                {
-                    "@id": "bts:TargetNumberofReads"
                 }
             ],
             "sms:validationRules": []
@@ -1194,7 +1179,7 @@
                     "@id": "bts:SpikeInMix2"
                 },
                 {
-                    "@id": "bts:BothSpikeinMixes"
+                    "@id": "bts:BothSpikeInMixes"
                 }
             ],
             "sms:validationRules": []
@@ -1217,10 +1202,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:SpikeinMix1",
+            "@id": "bts:SpikeInMix1",
             "@type": "rdfs:Class",
             "rdfs:comment": "ERCC RNA-seq spike in control mix 1 [microliters]",
-            "rdfs:label": "SpikeinMix1",
+            "rdfs:label": "SpikeInMix1",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:ERCC"
@@ -1229,15 +1214,15 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Spike in Mix 1",
+            "sms:displayName": "Spike In Mix 1",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
-            "@id": "bts:SpikeinMix2",
+            "@id": "bts:SpikeInMix2",
             "@type": "rdfs:Class",
             "rdfs:comment": "ERCC RNA-seq spike in control mix 2 [microliters]",
-            "rdfs:label": "SpikeinMix2",
+            "rdfs:label": "SpikeInMix2",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:ERCC"
@@ -1246,7 +1231,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Spike in Mix 2",
+            "sms:displayName": "Spike In Mix 2",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -1363,7 +1348,7 @@
         {
             "@id": "bts:FastQCAdapterContent",
             "@type": "rdfs:Class",
-            "rdfs:comment": "State classification given by FASTQC for the metric. Metric specific details about the states are available on their websites.",
+            "rdfs:comment": "See website for more information on metric and states: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/10%20Adapter%20Content.html",
             "rdfs:label": "FastQCAdapterContent",
             "rdfs:subClassOf": [
                 {
@@ -1397,7 +1382,7 @@
         {
             "@id": "bts:FastQCBasicStatistics",
             "@type": "rdfs:Class",
-            "rdfs:comment": "State classification given by FASTQC for the metric. Metric specific details about the states are available on their websites.",
+            "rdfs:comment": "See website for more information on metric and states:",
             "rdfs:label": "FastQCBasicStatistics",
             "rdfs:subClassOf": [
                 {
@@ -1446,9 +1431,26 @@
             "sms:validationRules": []
         },
         {
+            "@id": "bts:PercentGCContent",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The overall percentage of GC base pairs in all sequences (integer)",
+            "rdfs:label": "PercentGCContent",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Percent GC Content",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
             "@id": "bts:FastQCKmerContent",
             "@type": "rdfs:Class",
-            "rdfs:comment": "State classification given by FASTQC for the metric. Metric specific details about the states are available on their websites.",
+            "rdfs:comment": "See website for more information on metric and states: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/11%20Kmer%20Content.html",
             "rdfs:label": "FastQCKmerContent",
             "rdfs:subClassOf": [
                 {
@@ -1482,7 +1484,7 @@
         {
             "@id": "bts:FastQCOverrepresentedSequences",
             "@type": "rdfs:Class",
-            "rdfs:comment": "State classification given by FASTQC for the metric. Metric specific details about the states are available on their websites.",
+            "rdfs:comment": "See website for more information on metric and states: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/9%20Overrepresented%20Sequences.html",
             "rdfs:label": "FastQCOverrepresentedSequences",
             "rdfs:subClassOf": [
                 {
@@ -1516,7 +1518,7 @@
         {
             "@id": "bts:FastQCPerBaseNContent",
             "@type": "rdfs:Class",
-            "rdfs:comment": "State classification given by FASTQC for the metric. Metric specific details about the states are available on their websites.",
+            "rdfs:comment": "See website for more information on metric and states: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/6%20Per%20Base%20N%20Content.html",
             "rdfs:label": "FastQCPerBaseNContent",
             "rdfs:subClassOf": [
                 {
@@ -1550,7 +1552,7 @@
         {
             "@id": "bts:FastQCPerBaseSequenceContent",
             "@type": "rdfs:Class",
-            "rdfs:comment": "State classification given by FASTQC for the metric. Metric specific details about the states are available on their websites.",
+            "rdfs:comment": "See website for more information on metric and states: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/4%20Per%20Base%20Sequence%20Content.html",
             "rdfs:label": "FastQCPerBaseSequenceContent",
             "rdfs:subClassOf": [
                 {
@@ -1584,7 +1586,7 @@
         {
             "@id": "bts:FastQCPerBaseSequenceQuality",
             "@type": "rdfs:Class",
-            "rdfs:comment": "State classification given by FASTQC for the metric. Metric specific details about the states are available on their websites.",
+            "rdfs:comment": "See website for more information on metric and states: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/2%20Per%20Base%20Sequence%20Quality.html",
             "rdfs:label": "FastQCPerBaseSequenceQuality",
             "rdfs:subClassOf": [
                 {
@@ -1618,7 +1620,7 @@
         {
             "@id": "bts:FastQCPerSequenceGCContent",
             "@type": "rdfs:Class",
-            "rdfs:comment": "State classification given by FASTQC for the metric. Metric specific details about the states are available on their websites.",
+            "rdfs:comment": "See website for more information on metric and states: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/5%20Per%20Sequence%20GC%20Content.html",
             "rdfs:label": "FastQCPerSequenceGCContent",
             "rdfs:subClassOf": [
                 {
@@ -1652,7 +1654,7 @@
         {
             "@id": "bts:FastQCPerSequenceQualityScore",
             "@type": "rdfs:Class",
-            "rdfs:comment": "State classification given by FASTQC for the metric. Metric specific details about the states are available on their websites.",
+            "rdfs:comment": "See website for more information on metric and states: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/3%20Per%20Sequence%20Quality%20Scores.html",
             "rdfs:label": "FastQCPerSequenceQualityScore",
             "rdfs:subClassOf": [
                 {
@@ -1686,7 +1688,7 @@
         {
             "@id": "bts:FastQCPerTileSequenceQuality",
             "@type": "rdfs:Class",
-            "rdfs:comment": "State classification given by FASTQC for the metric. Metric specific details about the states are available on their websites.",
+            "rdfs:comment": "See website for more information on metric and states: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/12%20Per%20Tile%20Sequence%20Quality.html",
             "rdfs:label": "FastQCPerTileSequenceQuality",
             "rdfs:subClassOf": [
                 {
@@ -1718,26 +1720,9 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:PercentGCContent",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "The overall %GC of all bases in all sequences (integer)",
-            "rdfs:label": "PercentGCContent",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Sequencing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Percent GC Content",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
             "@id": "bts:FastQCSequenceDuplicationLevels",
             "@type": "rdfs:Class",
-            "rdfs:comment": "State classification given by FASTQC for the metric. Metric specific details about the states are available on their websites.",
+            "rdfs:comment": "See website for more information on metric and states: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/8%20Duplicate%20Sequences.html",
             "rdfs:label": "FastQCSequenceDuplicationLevels",
             "rdfs:subClassOf": [
                 {
@@ -1771,7 +1756,7 @@
         {
             "@id": "bts:FastQCSequenceLengthDistribution",
             "@type": "rdfs:Class",
-            "rdfs:comment": "State classification given by FASTQC for the metric. Metric specific details about the states are available on their websites.",
+            "rdfs:comment": "See website for more information on metric and states: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/7%20Sequence%20Length%20Distribution.html",
             "rdfs:label": "FastQCSequenceLengthDistribution",
             "rdfs:subClassOf": [
                 {
@@ -1856,7 +1841,7 @@
         {
             "@id": "bts:QCWorkflowVersion",
             "@type": "rdfs:Class",
-            "rdfs:comment": "Major version for a GDC workflow.",
+            "rdfs:comment": "Major version for a workflow",
             "rdfs:label": "QCWorkflowVersion",
             "rdfs:subClassOf": [
                 {
@@ -2515,23 +2500,6 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "xz",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:FragmentStandardLength",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "FragmentStandardLength",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:BulkRNAseqLevel1"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Fragment Standard Length",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -3195,57 +3163,6 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "PhiX",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:SpikeInMix1",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "SpikeInMix1",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:ERCC"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Spike In Mix 1",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:SpikeInMix2",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "SpikeInMix2",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:ERCC"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Spike In Mix 2",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:BothSpikeinMixes",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "BothSpikeinMixes",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:ERCC"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Both Spike in Mixes",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
