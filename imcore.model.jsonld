@@ -224,7 +224,7 @@
                     "@id": "bts:GroupedBiospecimenID"
                 },
                 {
-                    "@id": "bts:GroupedBiospecimentIDDescription"
+                    "@id": "bts:GroupedBiospecimenIDDescription"
                 },
                 {
                     "@id": "bts:SpeciesType"
@@ -839,7 +839,7 @@
         {
             "@id": "bts:AgeatSequencing",
             "@type": "rdfs:Class",
-            "rdfs:comment": "Age of the subject the sample was taken from, in days, at the time sequencing ocurred. ",
+            "rdfs:comment": "Age of the subject the sample was taken from, in days, at the time sequencing occurred. ",
             "rdfs:label": "AgeatSequencing",
             "rdfs:subClassOf": [
                 {
@@ -1009,7 +1009,7 @@
         {
             "@id": "bts:FragmentStandardDeviationLength",
             "@type": "rdfs:Class",
-            "rdfs:comment": "Standard deviation of the sequenced fragments lenght (e.g. as predicted by Agilent Bioanalyzer) (integer).",
+            "rdfs:comment": "Standard deviation of the sequenced fragments length (e.g. as predicted by Agilent Bioanalyzer) (integer).",
             "rdfs:label": "FragmentStandardDeviationLength",
             "rdfs:subClassOf": [
                 {
@@ -1043,7 +1043,7 @@
         {
             "@id": "bts:LibraryStrand",
             "@type": "rdfs:Class",
-            "rdfs:comment": "Library standed-ness (i.e. the strand from which read 1 originates, if applicable)",
+            "rdfs:comment": "Library stranded-ness (i.e. the strand from which read 1 originates, if applicable)",
             "rdfs:label": "LibraryStrand",
             "rdfs:subClassOf": [
                 {
@@ -2053,10 +2053,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:GroupedBiospecimentIDDescription",
+            "@id": "bts:GroupedBiospecimenIDDescription",
             "@type": "rdfs:Class",
-            "rdfs:comment": "Description of experimental grouping design for paired suamples (i.e. tumor/normal). Enter \"Not Applicable\" if not applicable.",
-            "rdfs:label": "GroupedBiospecimentIDDescription",
+            "rdfs:comment": "Description of experimental grouping design for paired samples (i.e. tumor/normal). Enter \"Not Applicable\" if not applicable.",
+            "rdfs:label": "GroupedBiospecimenIDDescription",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Biospecimen"
@@ -2065,14 +2065,14 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Grouped Biospeciment ID Description",
+            "sms:displayName": "Grouped Biospecimen ID Description",
             "sms:required": "sms:true",
             "sms:validationRules": []
         },
         {
             "@id": "bts:SpeciesType",
             "@type": "rdfs:Class",
-            "rdfs:comment": "Text term that designates species type. For cell lines or cultured cells, please indiciate the species of origin.",
+            "rdfs:comment": "Text term that designates species type. For cell lines or cultured cells, please indicate the species of origin.",
             "rdfs:label": "SpeciesType",
             "rdfs:subClassOf": [
                 {
@@ -2097,7 +2097,7 @@
         {
             "@id": "bts:TissueType",
             "@type": "rdfs:Class",
-            "rdfs:comment": "Text term that represents a description of the kind of tissue collected with respect to disease status or proximity to tumor tissue. Be as specific as possible; i.e. pre-cancerous lesions should be classified as \"Abnormal\", and cancerouse as \"Tumor.\"",
+            "rdfs:comment": "Text term that represents a description of the kind of tissue collected with respect to disease status or proximity to tumor tissue. Be as specific as possible; i.e. pre-cancerous lesions should be classified as \"Abnormal\", and cancerous as \"Tumor.\"",
             "rdfs:label": "TissueType",
             "rdfs:subClassOf": [
                 {
@@ -2281,7 +2281,7 @@
         {
             "@id": "bts:TimepointLabel",
             "@type": "rdfs:Class",
-            "rdfs:comment": "Label that best describes the timepoint at which the biospecimen was obtained. ",
+            "rdfs:comment": "Label that best describes the time point at which the biospecimen was obtained. ",
             "rdfs:label": "TimepointLabel",
             "rdfs:subClassOf": [
                 {
@@ -2327,7 +2327,7 @@
         {
             "@id": "bts:ProtocolLink",
             "@type": "rdfs:Class",
-            "rdfs:comment": "Protocols.io identifer that describes the protocol by which the sample was obtained or generated. A valid Digital Object Identifier (DOI) (this would include protocols for collection as well as processing depending on the same. i.e. dissociation)",
+            "rdfs:comment": "Protocols.io identifier that describes the protocol by which the sample was obtained or generated. A valid Digital Object Identifier (DOI) (this would include protocols for collection as well as processing depending on the same. i.e. dissociation)",
             "rdfs:label": "ProtocolLink",
             "rdfs:subClassOf": [
                 {
