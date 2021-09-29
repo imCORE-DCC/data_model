@@ -126,7 +126,22 @@
             },
             "schema:rangeIncludes": [
                 {
+                    "@id": "bts:BAI"
+                },
+                {
+                    "@id": "bts:BAM"
+                },
+                {
+                    "@id": "bts:CSV"
+                },
+                {
                     "@id": "bts:FASTQ"
+                },
+                {
+                    "@id": "bts:TSV"
+                },
+                {
+                    "@id": "bts:TXT"
                 }
             ],
             "sms:displayName": "File Format",
@@ -411,6 +426,279 @@
                 },
                 {
                     "@id": "bts:FastQCSequenceLengthDistribution"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:BulkRNAseqLevel2",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Bulk RNA-seq alignment protocol description",
+            "rdfs:label": "BulkRNAseqLevel2",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Bulk RNA-seq Level 2",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Biospecimen"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:Filename"
+                },
+                {
+                    "@id": "bts:FileFormat"
+                },
+                {
+                    "@id": "bts:FileContents"
+                },
+                {
+                    "@id": "bts:imCOREBiospecimenID"
+                },
+                {
+                    "@id": "bts:ParentFileIDs"
+                },
+                {
+                    "@id": "bts:WorkflowLink"
+                },
+                {
+                    "@id": "bts:WorkflowType"
+                },
+                {
+                    "@id": "bts:WorkflowVersion"
+                },
+                {
+                    "@id": "bts:GenomicReference"
+                },
+                {
+                    "@id": "bts:GenomicReferenceURL"
+                },
+                {
+                    "@id": "bts:CutadaptPercentBasePairsTrimmed"
+                },
+                {
+                    "@id": "bts:STARInputReads"
+                },
+                {
+                    "@id": "bts:STARUniquelyMappedReads"
+                },
+                {
+                    "@id": "bts:STARPercentUniquelyMappedReads"
+                },
+                {
+                    "@id": "bts:STARPercentMismatchPerBaseforUniquelyMappedReads"
+                },
+                {
+                    "@id": "bts:STARPercentDeletionPerBaseforUniquelyMappedReads"
+                },
+                {
+                    "@id": "bts:STARPercentInsertionPerBaseForUniquelyMappedReads"
+                },
+                {
+                    "@id": "bts:STARPercentMultiMappedReads"
+                },
+                {
+                    "@id": "bts:STARPercentReadsMappedtoTooManyLoci"
+                },
+                {
+                    "@id": "bts:STARPercentUnmappedReadsDuetoMismatches"
+                },
+                {
+                    "@id": "bts:STARPercentUnmappedReadsDuetoBeingTooShort"
+                },
+                {
+                    "@id": "bts:STARPercentUnmappedReadsDuetoOtherReasons"
+                },
+                {
+                    "@id": "bts:PicardEstimatedLibrarySize"
+                },
+                {
+                    "@id": "bts:SamtoolsRawTotalSequences"
+                },
+                {
+                    "@id": "bts:SamtoolsReadsMapped"
+                },
+                {
+                    "@id": "bts:SamtoolsReadsUnmapped"
+                },
+                {
+                    "@id": "bts:SamtoolsTotalLength"
+                },
+                {
+                    "@id": "bts:SamtoolsMismatches"
+                },
+                {
+                    "@id": "bts:SamtoolsErrorRate"
+                },
+                {
+                    "@id": "bts:SamtoolsAverageLength"
+                },
+                {
+                    "@id": "bts:SamtoolsAverageQuality"
+                },
+                {
+                    "@id": "bts:SamtoolsInsertSizeAverage"
+                },
+                {
+                    "@id": "bts:SamtoolsInsertSizeStandardDeviation"
+                },
+                {
+                    "@id": "bts:SamtoolsPairsonDifferentChromosomes"
+                },
+                {
+                    "@id": "bts:SamtoolsPercentProperlyPairedReads"
+                },
+                {
+                    "@id": "bts:SamtoolsPercentReadsMapped"
+                },
+                {
+                    "@id": "bts:SamtoolsPercentReadsUnmapped"
+                },
+                {
+                    "@id": "bts:SamtoolsPercentReadsProperlyPaired"
+                },
+                {
+                    "@id": "bts:SamtoolsPercentPaired"
+                },
+                {
+                    "@id": "bts:SamtoolsPercentReadsDuplicated"
+                },
+                {
+                    "@id": "bts:SamtoolsPercentReadsMQ0"
+                },
+                {
+                    "@id": "bts:SamtoolsPercentReadsQCFailed"
+                },
+                {
+                    "@id": "bts:RSeQCNonSpliceReads"
+                },
+                {
+                    "@id": "bts:RSeQCSpliceReads"
+                },
+                {
+                    "@id": "bts:RSeQCReadsMappedinProperPairs"
+                },
+                {
+                    "@id": "bts:RSeQCPercentUniquleyMappedReads"
+                },
+                {
+                    "@id": "bts:RSeQCPercentReadsMappedinProperPairs"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:BulkRNAseqLevel3",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Bulk RNA-seq gene expression matrices",
+            "rdfs:label": "BulkRNAseqLevel3",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Bulk RNA-seq Level 3",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Biospecimen"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:Filename"
+                },
+                {
+                    "@id": "bts:FileFormat"
+                },
+                {
+                    "@id": "bts:FileContents"
+                },
+                {
+                    "@id": "bts:imCOREBiospecimenID"
+                },
+                {
+                    "@id": "bts:ParentFileIDs"
+                },
+                {
+                    "@id": "bts:PseudoAlignmentUsed"
+                },
+                {
+                    "@id": "bts:WorkflowLink"
+                },
+                {
+                    "@id": "bts:WorkflowType"
+                },
+                {
+                    "@id": "bts:WorkflowVersion"
+                },
+                {
+                    "@id": "bts:GenomicReference"
+                },
+                {
+                    "@id": "bts:GenomicReferenceURL"
+                },
+                {
+                    "@id": "bts:GeneAnnotation"
+                },
+                {
+                    "@id": "bts:GeneAnnotationURL"
+                },
+                {
+                    "@id": "bts:RSeQCFractionSupportingRead1FromSenseStrand"
+                },
+                {
+                    "@id": "bts:RSeQCFractionSupportingRead1FromAntisenseStrand"
+                },
+                {
+                    "@id": "bts:RSeQCFractionUnknown"
+                },
+                {
+                    "@id": "bts:RSeQCPercentKnownSplicingEvents"
+                },
+                {
+                    "@id": "bts:RSeQCPercentPartialNovelSplicingEvents"
+                },
+                {
+                    "@id": "bts:RSeQCPercentNovelSplicingEvents"
+                },
+                {
+                    "@id": "bts:RSeQCPercentKnownSplicingJunctions"
+                },
+                {
+                    "@id": "bts:RSeQCPercentPartialNovelSplicingJunctions"
+                },
+                {
+                    "@id": "bts:RSeQCPercentNovelSplicingJunctions"
+                },
+                {
+                    "@id": "bts:RSeQCPercentTagsinCDSExons"
+                },
+                {
+                    "@id": "bts:RSeQCPercentTagsin5_UTRExons"
+                },
+                {
+                    "@id": "bts:RSeQCPercentTagsin3_UTRExons"
+                },
+                {
+                    "@id": "bts:RSeQCPercentTagsinIntrons"
                 }
             ],
             "sms:validationRules": []
@@ -2416,6 +2704,1111 @@
             ],
             "sms:displayName": "Preservation Method",
             "sms:required": "sms:true",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:ParentFileIDs",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "List of Synapse IDs that were used to generate this file.",
+            "rdfs:label": "ParentFileIDs",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:File"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Parent File IDs",
+            "sms:required": "sms:true",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:WorkflowLink",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Link to workflow used.",
+            "rdfs:label": "WorkflowLink",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Workflow Link",
+            "sms:required": "sms:true",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:WorkflowType",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Generic name for the workflow used to analyze a data set.",
+            "rdfs:label": "WorkflowType",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Workflow Type",
+            "sms:required": "sms:true",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:WorkflowVersion",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Major version for a workflow.",
+            "rdfs:label": "WorkflowVersion",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Workflow Version",
+            "sms:required": "sms:true",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:GenomicReference",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The genome reference used in the alignment of reads.",
+            "rdfs:label": "GenomicReference",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Genomic Reference",
+            "sms:required": "sms:true",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:GenomicReferenceURL",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "URL refering to exact reference used.",
+            "rdfs:label": "GenomicReferenceURL",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Genomic Reference URL",
+            "sms:required": "sms:true",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:FileContents",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The contents of the file being submitted.",
+            "rdfs:label": "FileContents",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:File"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "File Contents",
+            "sms:required": "sms:true",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:CutadaptPercentBasePairsTrimmed",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of processed basepairs that were trimmed. Generated by Cutadapt.",
+            "rdfs:label": "CutadaptPercentBasePairsTrimmed",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Cutadapt - Percent Base Pairs Trimmed",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:STARInputReads",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Number of input reads (paired-end reads are considered as one read). Generated by STAR.",
+            "rdfs:label": "STARInputReads",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "STAR - Input Reads",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:STARUniquelyMappedReads",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Number of uniquely mapped reads. Generated by STAR.",
+            "rdfs:label": "STARUniquelyMappedReads",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "STAR - Uniquely Mapped Reads",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:STARPercentUniquelyMappedReads",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of uniquely mapped reads. Generated by STAR.",
+            "rdfs:label": "STARPercentUniquelyMappedReads",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "STAR - Percent Uniquely Mapped Reads",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:STARPercentMismatchPerBaseforUniquelyMappedReads",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Mismatch percentage per base for uniquely mapped reads. Generated by STAR.",
+            "rdfs:label": "STARPercentMismatchPerBaseforUniquelyMappedReads",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "STAR - Percent Mismatch Per Base for Uniquely Mapped Reads",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:STARPercentDeletionPerBaseforUniquelyMappedReads",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Deletion percentage per base for uniquely mapped reads. Generated by STAR.",
+            "rdfs:label": "STARPercentDeletionPerBaseforUniquelyMappedReads",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "STAR - Percent Deletion Per Base for Uniquely Mapped Reads",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:STARPercentInsertionPerBaseForUniquelyMappedReads",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Insertion percentage per base for uniquely mapped reads. Generated by STAR.",
+            "rdfs:label": "STARPercentInsertionPerBaseForUniquelyMappedReads",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "STAR - Percent Insertion Per Base For Uniquely Mapped Reads",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:STARPercentMultiMappedReads",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of reads mapped to multiple loci. Generated by STAR.",
+            "rdfs:label": "STARPercentMultiMappedReads",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "STAR - Percent Multi Mapped Reads",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:STARPercentReadsMappedtoTooManyLoci",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of reads mapped to too many loci. Generated by STAR.",
+            "rdfs:label": "STARPercentReadsMappedtoTooManyLoci",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "STAR - Percent Reads Mapped to Too Many Loci",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:STARPercentUnmappedReadsDuetoMismatches",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of reads unmapped due to too many mismatches. Generated by STAR.",
+            "rdfs:label": "STARPercentUnmappedReadsDuetoMismatches",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "STAR - Percent Unmapped Reads Due to Mismatches",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:STARPercentUnmappedReadsDuetoBeingTooShort",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of reads unmapped due to being too short. Generated by STAR.",
+            "rdfs:label": "STARPercentUnmappedReadsDuetoBeingTooShort",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "STAR - Percent Unmapped Reads Due to Being Too Short",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:STARPercentUnmappedReadsDuetoOtherReasons",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of reads unmapped due to other reasons. Generated by STAR.",
+            "rdfs:label": "STARPercentUnmappedReadsDuetoOtherReasons",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "STAR - Percent Unmapped Reads Due to Other Reasons",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:PicardEstimatedLibrarySize",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Estimated number of unique molecules in the library based on duplication. Generated by Picard (MarkDuplicates).",
+            "rdfs:label": "PicardEstimatedLibrarySize",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Picard - Estimated Library Size",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SamtoolsRawTotalSequences",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Total number of reads in a file, excluding supplementary and secondary reads. Same number reported by samtools view -c. Generated by Samtools (stats).",
+            "rdfs:label": "SamtoolsRawTotalSequences",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Samtools - Raw Total Sequences",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SamtoolsReadsMapped",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Number of reads, paired or single, that are mapped (flag 0x4 or 0x8 not set). Generated by Samtools (stats).",
+            "rdfs:label": "SamtoolsReadsMapped",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Samtools - Reads Mapped",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SamtoolsReadsUnmapped",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Number of unmapped reads (flag 0x4 is set). Generated by Samtools (stats).",
+            "rdfs:label": "SamtoolsReadsUnmapped",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Samtools - Reads Unmapped",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SamtoolsTotalLength",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Number of processed bases from reads that are neither secondary nor supplementary (flags 0x100 and 0x800 are not set). Generated by Samtools (stats).",
+            "rdfs:label": "SamtoolsTotalLength",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Samtools - Total Length",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SamtoolsMismatches",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Number of mismatched bases, as reported by the NM tag associated with a read, if present. Generated by Samtools (stats).",
+            "rdfs:label": "SamtoolsMismatches",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Samtools - Mismatches",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SamtoolsErrorRate",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Ratio between mismatches and bases mapped (cigar). Generated by Samtools (stats).",
+            "rdfs:label": "SamtoolsErrorRate",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Samtools - Error Rate",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SamtoolsAverageLength",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Ratio between total length and sequences. Generated by Samtools (stats).",
+            "rdfs:label": "SamtoolsAverageLength",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Samtools - Average Length",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SamtoolsAverageQuality",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Ratio between the sum of base qualities and total length. Generated by Samtools (stats).",
+            "rdfs:label": "SamtoolsAverageQuality",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Samtools - Average Quality",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SamtoolsInsertSizeAverage",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Average absolute template length for paired and mapped reads. Generated by Samtools (stats).",
+            "rdfs:label": "SamtoolsInsertSizeAverage",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Samtools - Insert Size Average",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SamtoolsInsertSizeStandardDeviation",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Standard deviation for the average template length distribution. Generated by Samtools (stats).",
+            "rdfs:label": "SamtoolsInsertSizeStandardDeviation",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Samtools - Insert Size Standard Deviation",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SamtoolsPairsonDifferentChromosomes",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Number of pairs where one read is on one chromosome and the pair read is on a different chromosome. Generated by Samtools (stats).",
+            "rdfs:label": "SamtoolsPairsonDifferentChromosomes",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Samtools - Pairs on Different Chromosomes",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SamtoolsPercentProperlyPairedReads",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of reads properly paired out of sequences. Generated by Samtools (stats).",
+            "rdfs:label": "SamtoolsPercentProperlyPairedReads",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Samtools - Percent Properly Paired Reads",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SamtoolsPercentReadsMapped",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of reads, paired or single, that are mapped (flag 0x4 or 0x8 not set). Generated by Samtools (stats).",
+            "rdfs:label": "SamtoolsPercentReadsMapped",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Samtools - Percent Reads Mapped",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SamtoolsPercentReadsUnmapped",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of unmapped reads (flag 0x4 is set). Generated by Samtools (stats).",
+            "rdfs:label": "SamtoolsPercentReadsUnmapped",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Samtools - Percent Reads Unmapped",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SamtoolsPercentReadsProperlyPaired",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of mapped paired reads with flag 0x2 set. Generated by Samtools (stats).",
+            "rdfs:label": "SamtoolsPercentReadsProperlyPaired",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Samtools - Percent Reads Properly Paired",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SamtoolsPercentPaired",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of paired reads, mapped or unmapped, that are neither secondary nor supplementary (flag 0x1 is set and flags 0x100 and 0x800 are not set). Generated by Samtools (stats).",
+            "rdfs:label": "SamtoolsPercentPaired",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Samtools - Percent Paired",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SamtoolsPercentReadsDuplicated",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of duplicate reads (flag 0x400 is set). Generated by Samtools (stats).",
+            "rdfs:label": "SamtoolsPercentReadsDuplicated",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Samtools - Percent Reads Duplicated",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SamtoolsPercentReadsMQ0",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of mapped reads with mapping quality 0. Generated by Samtools (stats).",
+            "rdfs:label": "SamtoolsPercentReadsMQ0",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Samtools - Percent Reads MQ0",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SamtoolsPercentReadsQCFailed",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of reads that failed the quality checks (flag 0x200 is set). Generated by Samtools (stats).",
+            "rdfs:label": "SamtoolsPercentReadsQCFailed",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Samtools - Percent Reads QC Failed",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:RSeQCNonSpliceReads",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Number of non-splice reads. Generated by RSeQC (bam_stat.py).",
+            "rdfs:label": "RSeQCNonSpliceReads",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "RSeQC - Non-Splice Reads",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:RSeQCSpliceReads",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Number of splice reads. Generated by RSeQC (bam_stat.py).",
+            "rdfs:label": "RSeQCSpliceReads",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "RSeQC - Splice Reads",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:RSeQCReadsMappedinProperPairs",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Number of reads mapped in proper pairs. Generated by RSeQC (bam_stat.py).",
+            "rdfs:label": "RSeQCReadsMappedinProperPairs",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "RSeQC - Reads Mapped in Proper Pairs",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:RSeQCPercentUniquleyMappedReads",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of reads with mapping quality over or equal to 30 (i.e., uniquely mapped). Generated by RSeQC (bam_stat.py).",
+            "rdfs:label": "RSeQCPercentUniquleyMappedReads",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "RSeQC - Percent Uniquley Mapped Reads",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:RSeQCPercentReadsMappedinProperPairs",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of reads mapped in proper pairs. Generated by RSeQC (bam_stat.py).",
+            "rdfs:label": "RSeQCPercentReadsMappedinProperPairs",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "RSeQC - Percent Reads Mapped in Proper Pairs",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:PseudoAlignmentUsed",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Pseudo aligners such as Kallisto or Salmon do not produce aligned reads BAM files.",
+            "rdfs:label": "PseudoAlignmentUsed",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Pseudo Alignment Used",
+            "sms:required": "sms:true",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:GeneAnnotation",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The set of gene and transcript annotations used in expression quantification.",
+            "rdfs:label": "GeneAnnotation",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Gene Annotation",
+            "sms:required": "sms:true",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:GeneAnnotationURL",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "URL referring to the exact gene annotation used",
+            "rdfs:label": "GeneAnnotationURL",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Gene Annotation URL",
+            "sms:required": "sms:true",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:RSeQCFractionSupportingRead1FromSenseStrand",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Fraction of reads explained by the following scenarios: read 1 mapped to sense strand indicates parental gene on sense strand, read 1 mapped to antisense strand indicates parental gene on antisense strand, read 2 mapped to sense strand indicates parental gene on antisense strand, or read 2 mapped to antisense strand indicates parental gene on sense strand. Generated by RSeQC (infer_experiment.py).",
+            "rdfs:label": "RSeQCFractionSupportingRead1FromSenseStrand",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "RSeQC - Fraction Supporting Read 1 From Sense Strand",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:RSeQCFractionSupportingRead1FromAntisenseStrand",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Fraction of reads explained by the following scenarios: read 1 mapped to sense strand indicates parental gene on antisense strand, read 1 mapped to antisense strand indicates parental gene on sense strand, read 2 mapped to sense strand indicates parental gene on sense strand, read 2 mapped to antisense strand indicates parental gene on antisense strand. Generated by RSeQC (infer_experiment.py).",
+            "rdfs:label": "RSeQCFractionSupportingRead1FromAntisenseStrand",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "RSeQC - Fraction Supporting Read 1 From Antisense Strand",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:RSeQCFractionUnknown",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Fraction of reads that were mapped to genome regions without standedness of transcripts (such as regions that having both strands transcribed). Generated by RSeQC (infer_experiment.py).",
+            "rdfs:label": "RSeQCFractionUnknown",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "RSeQC - Fraction Unknown",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:RSeQCPercentKnownSplicingEvents",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of known (i.e., with both splice sites being annotated) splicing events. Generated by RSeQC (junction_annotation.py).",
+            "rdfs:label": "RSeQCPercentKnownSplicingEvents",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "RSeQC - Percent Known Splicing Events",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:RSeQCPercentPartialNovelSplicingEvents",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of partial novel (i.e., with one annotated splice site) splicing events. Generated by RSeQC (junction_annotation.py).",
+            "rdfs:label": "RSeQCPercentPartialNovelSplicingEvents",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "RSeQC - Percent Partial Novel Splicing Events",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:RSeQCPercentNovelSplicingEvents",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of novel (i.e., with no annotated splice sites) splicing events. Generated by RSeQC (junction_annotation.py).",
+            "rdfs:label": "RSeQCPercentNovelSplicingEvents",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "RSeQC - Percent Novel Splicing Events",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:RSeQCPercentKnownSplicingJunctions",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of known (i.e., with both splice sites being annotated) splicing junctions. Generated by RSeQC (junction_annotation.py).",
+            "rdfs:label": "RSeQCPercentKnownSplicingJunctions",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "RSeQC - Percent Known Splicing Junctions",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:RSeQCPercentPartialNovelSplicingJunctions",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of partial novel (i.e., with one annotated splice site) splicing junctions. Generated by RSeQC (junction_annotation.py).",
+            "rdfs:label": "RSeQCPercentPartialNovelSplicingJunctions",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "RSeQC - Percent Partial Novel Splicing Junctions",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:RSeQCPercentNovelSplicingJunctions",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of novel (i.e., with no annotated splice sites) splicing junctions. Generated by RSeQC (junction_annotation.py).",
+            "rdfs:label": "RSeQCPercentNovelSplicingJunctions",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "RSeQC - Percent Novel Splicing Junctions",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:RSeQCPercentTagsinCDSExons",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of tags in coding sequence (CDS) exons. Generated by RSeQC (read_distribution.py).",
+            "rdfs:label": "RSeQCPercentTagsinCDSExons",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "RSeQC - Percent Tags in CDS Exons",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:RSeQCPercentTagsin5_UTRExons",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of tags in 5' untranslated region (UTR) exons. Generated by RSeQC (read_distribution.py).",
+            "rdfs:label": "RSeQCPercentTagsin5_UTRExons",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "RSeQC - Percent Tags in 5'UTR Exons",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:RSeQCPercentTagsin3_UTRExons",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of tags in 3' untranslated region (UTR) exons. Generated by RSeQC (read_distribution.py).",
+            "rdfs:label": "RSeQCPercentTagsin3_UTRExons",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "RSeQC - Percent Tags in 3'UTR Exons",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:RSeQCPercentTagsinIntrons",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Percentage of tags in introns. Generated by RSeQC (read_distribution.py).",
+            "rdfs:label": "RSeQCPercentTagsinIntrons",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "RSeQC - Percent Tags in Introns",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:BAI",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "BAI",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:FileFormat"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "BAI",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:BAM",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "BAM",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:FileFormat"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "BAM",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:CSV",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "CSV",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:FileFormat"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "CSV",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:TSV",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "TSV",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:FileFormat"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "TSV",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:TXT",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "TXT",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:FileFormat"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "TXT",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
