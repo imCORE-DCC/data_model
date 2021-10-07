@@ -296,6 +296,9 @@
                     "@id": "bts:TissueType"
                 },
                 {
+                    "@id": "bts:GraftType"
+                },
+                {
                     "@id": "bts:AnalyteType"
                 },
                 {
@@ -360,9 +363,6 @@
                 },
                 {
                     "@id": "bts:LibraryLayout"
-                },
-                {
-                    "@id": "bts:FASTQContents"
                 },
                 {
                     "@id": "bts:AssayStrandedness"
@@ -2299,7 +2299,7 @@
         {
             "@id": "bts:imCOREBiospecimenID",
             "@type": "rdfs:Class",
-            "rdfs:comment": "imCORE ID associated with a patient based on imCORE ID SOP (eg MO12345_1a2a)",
+            "rdfs:comment": "Unique identifier assigned to a biospecimen (eg MO12345_1a2a). Please refer to the latest version of the imCORE Identifiers SOP here: https://www.synapse.org/#!Synapse:syn25882384",
             "rdfs:label": "imCOREBiospecimenID",
             "rdfs:subClassOf": [
                 {
@@ -2769,7 +2769,7 @@
             "sms:required": "sms:true",
             "sms:requiresDependency": [
                 {
-                    "@id": "bts:TimeatCollection"
+                    "@id": "bts:TimeAtCollection"
                 }
             ],
             "sms:validationRules": []
@@ -2962,7 +2962,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Workflow Link",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -2990,7 +2990,7 @@
                 }
             ],
             "sms:displayName": "Workflow Type",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -3007,7 +3007,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Workflow Version",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -5939,23 +5939,6 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Not Specified",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:TimeatCollection",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "TimeatCollection",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:AgeInDaysAtCollection"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Time at Collection",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
